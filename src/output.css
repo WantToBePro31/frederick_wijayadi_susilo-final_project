@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&family=Oswald:wght@500&family=Permanent+Marker&family=Kanit&family=Ubuntu:wght@700&family=Luckiest+Guy&family=Bungee+Spice&family=Dangrek&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&family=Poppins:wght@500;700&family=M+PLUS+Rounded+1c:wght@300;400;500;700&family=Oswald:wght@500&family=Permanent+Marker&family=Kanit&family=Ubuntu:wght@700&family=Luckiest+Guy&family=Bungee+Spice&family=Dangrek&display=swap");
 
 /*
 ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
@@ -599,7 +599,7 @@ nav a:hover{
 
 .showwcase {
   padding-left: 0.5vw;
-  margin-right: 40vw;
+  margin-right: 10vw;
 }
 
 .navbar-right{
@@ -653,7 +653,7 @@ nav a:hover{
 .main-grid-container{
   display: grid;
   grid-auto-columns: auto;
-  grid-template-rows: 90vw 60vw 120vw 100vw 120vw;
+  grid-template-rows: 100vw 80vw 80vw 100vw 350vw 120vw;
 }
 
 #home{
@@ -674,7 +674,7 @@ nav a:hover{
 .avatar{
   order: 2;
   border-radius: 50%;
-  width: 25vh;
+  width: 40vw;
 }
 
 .welcome-text{
@@ -855,7 +855,8 @@ nav a:hover{
 .title-about{
   -webkit-animation: indeflate 0.6s ease-in-out infinite;
           animation: indeflate 0.6s ease-in-out infinite;
-  margin-top: -10vh;
+  font-weight: 700;
+  margin-top: -20vw;
   font-family: 'Luckiest Guy', cursive;
   background-image: linear-gradient(90deg, rgba(203,61,154,1) 0%, rgba(62,197,210,1) 44%, rgba(161,254,137,1) 100%);
   -webkit-background-clip: text;
@@ -863,8 +864,15 @@ nav a:hover{
   letter-spacing: 1rem;
 }
 
-.exclamation {
+.exclamation{
+  font-weight: 700;
   font-family: 'Dangrek', cursive;
+}
+
+#about div h1{
+  font-weight: 700;
+  font-size: 2vw;
+  font-family: 'Poppins', sans-serif;
 }
 
 .introduction{
@@ -919,9 +927,10 @@ nav a:hover{
           animation: textclip 1.5s linear infinite;
   background-clip: border-box;
   text-align: center;
+  font-weight: 700;
   text-transform: uppercase;
   margin-top: 3vw;
-  font-size: 3vw;
+  font-size: 4vw;
   font-family: 'Luckiest Guy', cursive;
   background-image: linear-gradient(-225deg, #d8d5e2 0%, #a96ee7 29%, #e0439cde 67%, rgb(239, 239, 87) 81%, #f14242 100%);;
   background-size: 200% auto;
@@ -1369,6 +1378,7 @@ nav a:hover{
 #education header{
   -webkit-animation: glow 1s infinite;
           animation: glow 1s infinite;
+  font-weight: 700;
   font-family: 'Permanent Marker', cursive;
   color: rgb(43, 177, 226);
   font-size: 3vw;
@@ -1509,6 +1519,7 @@ nav a:hover{
 #experience header{
   -webkit-animation: glow 1s infinite;
           animation: glow 1s infinite;
+  font-weight: 700;
   font-family: 'Permanent Marker', cursive;
   color: rgb(43, 177, 226);
   font-size: 3vw;
@@ -1546,6 +1557,121 @@ nav a:hover{
   width: 9vw;
 }
 
+#portofolio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #b92b27, #1565c0);
+}
+
+.frosted-glass{
+  position: absolute;
+}
+
+@-webkit-keyframes jump{
+  0%{
+    transform: translateY(0);
+  }
+
+  50%{
+    transform: translateY(-0.5%);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes jump{
+  0%{
+    transform: translateY(0);
+  }
+
+  50%{
+    transform: translateY(-0.5%);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.frosted-glass{
+  -webkit-animation: jump 2s infinite;
+          animation: jump 2s infinite;
+  border-style: solid;
+  --tw-backdrop-blur: blur(12px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  max-width: 90%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 1vw;
+  border-width: 1px;
+  border: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.frame{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.porto-wrapper{
+  position: relative;
+  overflow: hidden;
+  width: 40%;
+  border-radius: 8%;
+}
+
+.porto-wrapper img{
+  display: block;
+  width: 100%;
+  border-radius: 8%;
+}
+
+.porto-content{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  height: 0px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgb(41, 128, 185));
+  border-radius: 8%;
+}
+
+.porto-wrapper:hover .porto-content{
+  height: 100%;
+}
+
+.subtitle{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+  font-size: 5vw;
+}
+
+.descporto{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+  font-size: 4vw;
+}
+
 #contact{
   display: flex;
   flex-direction: column;
@@ -1574,6 +1700,7 @@ nav a:hover{
 
 .contact-header{
   background-repeat: no-repeat;
+  font-weight: 700;
   text-transform: uppercase;
   transition-duration: 500ms;
   font-size: 7vw;
@@ -1599,7 +1726,7 @@ fieldset{
   border-color: #00ffff;
   width: 60vw;
   gap: 2vw;
-  margin-bottom: 4vw;
+  margin-bottom: 4vw !important;
 }
 
 .form-detail{
@@ -1740,6 +1867,19 @@ footer{
   font-size: 3vw;
 }
 
+.my-\[5vw\]{
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+.mt-\[-10vw\]{
+  margin-top: -10vw;
+}
+
+.mb-\[5vw\]{
+  margin-bottom: 5vw;
+}
+
 .flex{
   display: flex;
 }
@@ -1803,9 +1943,25 @@ footer{
   justify-content: center;
 }
 
+.text-center{
+  text-align: center;
+}
+
+.font-portof{
+  font-family: 'Silkscreen', cursive;
+}
+
+.text-\[7vw\]{
+  font-size: 7vw;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
 @media (min-width: 1024px){
-  .lg\:mr-\[20vw\]{
-    margin-right: 20vw;
+  .lg\:mr-\[10vw\]{
+    margin-right: 10vw;
   }
 
   .lg\:ml-0{
@@ -1816,12 +1972,12 @@ footer{
     margin-top: 8vw;
   }
 
-  .lg\:mt-\[-15vw\]{
-    margin-top: -15vw;
+  .lg\:mt-\[-22vw\]{
+    margin-top: -22vw;
   }
 
-  .lg\:mt-\[5vw\]{
-    margin-top: 5vw;
+  .lg\:mt-\[-5vw\]{
+    margin-top: -5vw;
   }
 
   .lg\:w-\[40vw\]{
@@ -1830,6 +1986,10 @@ footer{
 
   .lg\:w-\[60vh\]{
     width: 60vh;
+  }
+
+  .lg\:w-\[20\%\]{
+    width: 20%;
   }
 
   .lg\:w-\[17vw\]{
@@ -1845,7 +2005,11 @@ footer{
   }
 
   .lg\:grid-rows-lmain{
-    grid-template-rows: 50vw 40vw 80vw 90vw 90vw;
+    grid-template-rows: 50vw 45vw 80vw 90vw 120vw 90vw;
+  }
+
+  .lg\:gap-10{
+    gap: 2.5rem;
   }
 
   .lg\:text-\[7vw\]{
@@ -1864,14 +2028,18 @@ footer{
     font-size: 1.5vw;
   }
 
+  .lg\:text-\[2vw\]{
+    font-size: 2vw;
+  }
+
   .lg\:text-\[6vw\]{
     font-size: 6vw;
   }
 }
 
-@media (min-width: 320px) and (max-width: 1023px){
-  .phone\:mr-\[45vw\]{
-    margin-right: 45vw;
+@media (min-width: 320px) and (max-width: 1024px){
+  .phone\:mr-\[40vw\]{
+    margin-right: 40vw;
   }
 
   .phone\:ml-\[-30vw\]{
@@ -1882,12 +2050,16 @@ footer{
     margin-top: 5vw;
   }
 
-  .phone\:mt-\[-20vw\]{
-    margin-top: -20vw;
+  .phone\:mt-\[-30vw\]{
+    margin-top: -30vw;
   }
 
-  .phone\:mt-\[10vw\]{
-    margin-top: 10vw;
+  .phone\:mt-\[-10vw\]{
+    margin-top: -10vw;
+  }
+
+  .phone\:mt-\[-3vw\]{
+    margin-top: -3vw;
   }
 
   .phone\:w-\[35vw\]{
@@ -1896,6 +2068,10 @@ footer{
 
   .phone\:w-\[40\%\]{
     width: 40%;
+  }
+
+  .phone\:w-\[27\%\]{
+    width: 27%;
   }
 
   .phone\:w-\[22vw\]{
@@ -1911,7 +2087,11 @@ footer{
   }
 
   .phone\:grid-rows-smain{
-    grid-template-rows: 50vw 50vw 90vw 90vw 90vw;
+    grid-template-rows: 50vw 60vw 90vw 90vw 180vw 100vw;
+  }
+
+  .phone\:gap-\[22px\]{
+    gap: 22px;
   }
 
   .phone\:text-\[7vw\]{
@@ -1926,8 +2106,16 @@ footer{
     font-size: 4vw;
   }
 
+  .phone\:text-\[2\.5vw\]{
+    font-size: 2.5vw;
+  }
+
   .phone\:text-\[2vw\]{
     font-size: 2vw;
+  }
+
+  .phone\:text-\[3vw\]{
+    font-size: 3vw;
   }
 
   .phone\:text-\[6vw\]{

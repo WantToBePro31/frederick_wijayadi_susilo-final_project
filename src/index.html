@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="output.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Curriculum Vitae</title>
   </head>
@@ -20,7 +20,7 @@
         <a
           href="https://showwcase.com/wanttobepro31"
           target="_blank"
-          class="showwcase phone:mr-[45vw] lg:mr-[20vw]"
+          class="showwcase phone:mr-[40vw] lg:mr-[10vw]"
           >WantToBePro31</a
         >
         <div
@@ -65,36 +65,43 @@
       <!----------------------------------------------------------- About Component ----------------------------------------------------------->
       <section id="about">
         <header>
-          <h1 class="title-about phone:mt-[-20vw] lg:mt-[-15vw]">
+          <h1 class="title-about phone:mt-[-30vw] lg:mt-[-22vw]">
             About Me<span class="exclamation">!</span>
           </h1>
         </header>
-        <h1>Hi I'm Frederick Wijayadi Susilo</h1>
         <div
-          class="introduction phone:mt-[10vw] lg:mt-[5vw]"
-          role="profile"
-          aria-label="introduction"
+          class="flex flex-column justify-center phone:mt-[-10vw] lg:mt-[-5vw]"
         >
-          <p class="about-detail phone:text-[2vw] lg:text-[1.5vw]">
-            I'm an Informatics student who has an interest in becoming a
-            Software Engineer especially in Backend Engineering. I love to play
-            video games and watch comedy or action movies. On the other hand, I
-            really like problem solving because it makes me feel challenged and
-            trains me to think critically about existing problems. I'm currently
-            working hard to achieve my goals of becoming a Software Engineer by
-            learning Git, GoLang, MySQL, MongoDB, Docker, etc.
-          </p>
-          <img
-            src="https://i.ibb.co/5W0f0F4/coding.gif"
-            alt="software-engineering"
-            class="swe-photo phone:w-[40%] lg:w-[60vh]"
-          />
+          <h1 class="mt-[-10vw] phone:text-[2.5vw] font-bold">
+            Hi I'm Frederick Wijayadi Susilo
+          </h1>
+          <div
+            class="introduction phone:mt-[-3vw] lg:mt-[-5vw]"
+            role="profile"
+            aria-label="introduction"
+          >
+            <p class="about-detail phone:text-[2vw] lg:text-[1.5vw]">
+              I'm an Informatics student who has an interest in becoming a
+              Software Engineer especially in Backend Engineering. I love to
+              play video games and watch comedy or action movies. On the other
+              hand, I really like problem solving because it makes me feel
+              challenged and trains me to think critically about existing
+              problems. I'm currently working hard to achieve my goals of
+              becoming a Software Engineer by learning Git, GoLang, MySQL,
+              MongoDB, Docker, etc.
+            </p>
+            <img
+              src="https://i.ibb.co/5W0f0F4/coding.gif"
+              alt="software-engineering"
+              class="swe-photo phone:w-[40%] lg:w-[60vh]"
+            />
+          </div>
         </div>
       </section>
       <!----------------------------------------------------------- Skill Component ----------------------------------------------------------->
       <section id="skill">
         <header class="animate-text">
-          <h1>Skills</h1>
+          <h1 class="phone:text-[7vw] lg:text-[7vw]">Skills</h1>
         </header>
         <div class="skill-wrapper" role="wrapper" aria-label="skill-wrapper">
           <div class="packer" role="pack" aria-label="progress-pack">
@@ -402,90 +409,199 @@
       </div>
       <!----------------------------------------------------------- Portofolio Component ----------------------------------------------------------->
       <section id="portofolio">
-        <header>
-          <h1>My Projects</h1>
-        </header>
-        <div role="display" aria-label="portofolios">
-          <div role="wrapper" aria-label="project-wrapper">
-            <img src="../assets/Avanlon.png" alt="avanlon" width="200" />
-            <h2>Avanlon</h2>
-            <p>RPG game built using Java Programming Language with GUI</p>
-          </div>
-          <div role="wrapper" aria-label="project-wrapper">
-            <img src="../assets/PreviewTodoList.png" alt="" width="200" />
-            <h2>To-Do List</h2>
-            <p>
-              Simple To-Do List using Laravel Framework with Blade Template
-              Engine
-            </p>
-          </div>
-          <div role="wrapper" aria-label="project-wrapper">
-            <img src="../assets/PreviewSimpleCRUD.png" alt="" width="200" />
-            <h2>Gallery Image Collection</h2>
-            <p>
-              Simple REST API for Gallery Image Collection using Laravel
-              Framework with Blade Template Engine
-            </p>
-          </div>
-          <div role="wrapper" aria-label="project-wrapper">
-            <img src="../assets/1Log.png" alt="" width="200" />
-            <h2>Book Store API</h2>
-            <p>
-              Simple REST API for Book Store using Go Programming Language with
-              Gin Framework
-            </p>
-          </div>
-          <div role="wrapper" aria-label="project-wrapper">
-            <img
-              src="../assets/RandomPasswordGenerator.png"
-              alt=""
-              width="200"
-            />
-            <h2>Random Password Generator</h2>
-            <p>
-              Simple Random Password Generator using Go Programming Language
-              with Gin Framework
-            </p>
-          </div>
-          <div role="wrapper" aria-label="project-wrapper">
-            <img src="../assets/Drowsiness.png" alt="" width="200" />
-            <h2>Drowsiness Image Detection</h2>
-            <p>
-              Detect drowsiness level for a person using Python Programming
-              Language with Yolov5
-            </p>
-          </div>
-          <div role="wrapper" aria-label="project-wrapper">
-            <img src="../assets/ChatApp.png" alt="" width="200" />
-            <h2>Chat Application</h2>
-            <p>
-              Make an application for chatting using JavaScript and WebSocket
-            </p>
-          </div>
-          <div role="wrapper" aria-label="project-wrapper">
-            <img src="../assets/Projekin.png" alt="" width="200" />
-            <h2>Projekin E-Commerce</h2>
-            <p>E-Commerce Website built using Laravel Framework</p>
-          </div>
-          <div role="wrapper" aria-label="project-wrapper">
-            <img src="../assets/ForumDiscussion.png" alt="" width="200" />
-            <h2>Forum Discussion</h2>
-            <p>A forum to discuss problems with everyone in the world</p>
-          </div>
-          <div role="wrapper" aria-label="project-wrapper">
-            <img src="../assets/Shortener.png" alt="" width="200" />
-            <h2>Url Shortener</h2>
-            <p>Shorten a very long URL into an easy access URL</p>
-          </div>
-          <div role="wrapper" aria-label="project-wrapper">
-            <img src="../assets/WeatherTracker.png" alt="" width="200" />
-            <h2>Weather Tracker</h2>
-            <p>Track a weather in your area in any place</p>
-          </div>
-          <div role="wrapper" aria-label="project-wrapper">
-            <img src="../assets/DiscordBot.png" alt="" width="200" />
-            <h2>Discord Bot</h2>
-            <p>Implement a bot for Discord that help many activities</p>
+        <div class="frosted-glass">
+          <header class="my-[5vw]">
+            <h1
+              class="text-center font-portof font-bold text-[7vw] phone:text-[5vw] lg:text-[5vw]"
+            >
+              My Projects
+            </h1>
+          </header>
+          <div
+            class="frame mb-[5vw] phone:gap-[22px] lg:gap-10"
+            role="display"
+            aria-label="portofolios"
+          >
+            <div
+              class="porto-wrapper phone:w-[27%] lg:w-[20%]"
+              role="wrapper"
+              aria-label="project-wrapper"
+            >
+              <img src="../assets/dummy.png" alt="dummy-project" />
+              <div class="porto-content">
+                <h2 class="subtitle phone:text-[4vw] lg:text-[2vw]">
+                  Mobile Application
+                </h2>
+                <p class="descporto phone:text-[3vw] lg:text-[1.5vw]">
+                  Make a simple mobile application using Kotlin
+                </p>
+              </div>
+            </div>
+            <div
+              class="porto-wrapper phone:w-[27%] lg:w-[20%]"
+              role="wrapper"
+              aria-label="project-wrapper"
+            >
+              <img src="../assets/dummy.png" alt="dummy-project" />
+              <div class="porto-content">
+                <h2 class="subtitle phone:text-[4vw] lg:text-[2vw]">
+                  Mobile Application
+                </h2>
+                <p class="descporto phone:text-[3vw] lg:text-[1.5vw]">
+                  Make a simple mobile application using Kotlin
+                </p>
+              </div>
+            </div>
+            <div
+              class="porto-wrapper phone:w-[27%] lg:w-[20%]"
+              role="wrapper"
+              aria-label="project-wrapper"
+            >
+              <img src="../assets/dummy.png" alt="dummy-project" />
+              <div class="porto-content">
+                <h2 class="subtitle phone:text-[4vw] lg:text-[2vw]">
+                  Mobile Application
+                </h2>
+                <p class="descporto phone:text-[3vw] lg:text-[1.5vw]">
+                  Make a simple mobile application using Kotlin
+                </p>
+              </div>
+            </div>
+            <div
+              class="porto-wrapper phone:w-[27%] lg:w-[20%]"
+              role="wrapper"
+              aria-label="project-wrapper"
+            >
+              <img src="../assets/dummy.png" alt="dummy-project" />
+              <div class="porto-content">
+                <h2 class="subtitle phone:text-[4vw] lg:text-[2vw]">
+                  Mobile Application
+                </h2>
+                <p class="descporto phone:text-[3vw] lg:text-[1.5vw]">
+                  Make a simple mobile application using Kotlin
+                </p>
+              </div>
+            </div>
+            <div
+              class="porto-wrapper phone:w-[27%] lg:w-[20%]"
+              role="wrapper"
+              aria-label="project-wrapper"
+            >
+              <img src="../assets/dummy.png" alt="dummy-project" />
+              <div class="porto-content">
+                <h2 class="subtitle phone:text-[4vw] lg:text-[2vw]">
+                  Mobile Application
+                </h2>
+                <p class="descporto phone:text-[3vw] lg:text-[1.5vw]">
+                  Make a simple mobile application using Kotlin
+                </p>
+              </div>
+            </div>
+            <div
+              class="porto-wrapper phone:w-[27%] lg:w-[20%]"
+              role="wrapper"
+              aria-label="project-wrapper"
+            >
+              <img src="../assets/dummy.png" alt="dummy-project" />
+              <div class="porto-content">
+                <h2 class="subtitle phone:text-[4vw] lg:text-[2vw]">
+                  Mobile Application
+                </h2>
+                <p class="descporto phone:text-[3vw] lg:text-[1.5vw]">
+                  Make a simple mobile application using Kotlin
+                </p>
+              </div>
+            </div>
+            <div
+              class="porto-wrapper phone:w-[27%] lg:w-[20%]"
+              role="wrapper"
+              aria-label="project-wrapper"
+            >
+              <img src="../assets/dummy.png" alt="dummy-project" />
+              <div class="porto-content">
+                <h2 class="subtitle phone:text-[4vw] lg:text-[2vw]">
+                  Mobile Application
+                </h2>
+                <p class="descporto phone:text-[3vw] lg:text-[1.5vw]">
+                  Make a simple mobile application using Kotlin
+                </p>
+              </div>
+            </div>
+            <div
+              class="porto-wrapper phone:w-[27%] lg:w-[20%]"
+              role="wrapper"
+              aria-label="project-wrapper"
+            >
+              <img src="../assets/dummy.png" alt="dummy-project" />
+              <div class="porto-content">
+                <h2 class="subtitle phone:text-[4vw] lg:text-[2vw]">
+                  Mobile Application
+                </h2>
+                <p class="descporto phone:text-[3vw] lg:text-[1.5vw]">
+                  Make a simple mobile application using Kotlin
+                </p>
+              </div>
+            </div>
+            <div
+              class="porto-wrapper phone:w-[27%] lg:w-[20%]"
+              role="wrapper"
+              aria-label="project-wrapper"
+            >
+              <img src="../assets/dummy.png" alt="dummy-project" />
+              <div class="porto-content">
+                <h2 class="subtitle phone:text-[4vw] lg:text-[2vw]">
+                  Mobile Application
+                </h2>
+                <p class="descporto phone:text-[3vw] lg:text-[1.5vw]">
+                  Make a simple mobile application using Kotlin
+                </p>
+              </div>
+            </div>
+            <div
+              class="porto-wrapper phone:w-[27%] lg:w-[20%]"
+              role="wrapper"
+              aria-label="project-wrapper"
+            >
+              <img src="../assets/dummy.png" alt="dummy-project" />
+              <div class="porto-content">
+                <h2 class="subtitle phone:text-[4vw] lg:text-[2vw]">
+                  Mobile Application
+                </h2>
+                <p class="descporto phone:text-[3vw] lg:text-[1.5vw]">
+                  Make a simple mobile application using Kotlin
+                </p>
+              </div>
+            </div>
+            <div
+              class="porto-wrapper phone:w-[27%] lg:w-[20%]"
+              role="wrapper"
+              aria-label="project-wrapper"
+            >
+              <img src="../assets/dummy.png" alt="dummy-project" />
+              <div class="porto-content">
+                <h2 class="subtitle phone:text-[4vw] lg:text-[2vw]">
+                  Mobile Application
+                </h2>
+                <p class="descporto phone:text-[3vw] lg:text-[1.5vw]">
+                  Make a simple mobile application using Kotlin
+                </p>
+              </div>
+            </div>
+            <div
+              class="porto-wrapper phone:w-[27%] lg:w-[20%]"
+              role="wrapper"
+              aria-label="project-wrapper"
+            >
+              <img src="../assets/dummy.png" alt="dummy-project" />
+              <div class="porto-content">
+                <h2 class="subtitle phone:text-[4vw] lg:text-[2vw]">
+                  Mobile Application
+                </h2>
+                <p class="descporto phone:text-[3vw] lg:text-[1.5vw]">
+                  Make a simple mobile application using Kotlin
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

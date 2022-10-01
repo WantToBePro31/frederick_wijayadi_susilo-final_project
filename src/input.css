@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&family=Oswald:wght@500&family=Permanent+Marker&family=Kanit&family=Ubuntu:wght@700&family=Luckiest+Guy&family=Bungee+Spice&family=Dangrek&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&family=Poppins:wght@500;700&family=M+PLUS+Rounded+1c:wght@300;400;500;700&family=Oswald:wght@500&family=Permanent+Marker&family=Kanit&family=Ubuntu:wght@700&family=Luckiest+Guy&family=Bungee+Spice&family=Dangrek&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -40,7 +40,7 @@
 
     .showwcase {
         padding-left: theme('padding.widthpoint5');
-        margin-right: theme('margin.width40');
+        margin-right: theme('margin.width10');
     }
 
     .navbar-right {
@@ -75,7 +75,7 @@
     .avatar {
         @apply order-2;
         border-radius: theme('borderRadius.percen50');
-        width: theme('width.height25');
+        width: theme('width.width40');
     }
 
     .welcome-text {
@@ -106,8 +106,8 @@
     }
 
     .title-about {
-        @apply animate-indeflate;
-        margin-top: theme('margin.minheight10');
+        @apply animate-indeflate font-bold;
+        margin-top: theme('margin.minwidth20');
         font-family: theme('fontFamily.aboutf');
         background-image: theme('backgroundImage.aboutbgc');
         -webkit-background-clip: text;
@@ -116,7 +116,14 @@
     }
 
     .exclamation {
+        @apply font-bold;
         font-family: theme('fontFamily.aboutfex');
+    }
+
+    #about div h1 {
+        @apply font-bold;
+        font-size: theme('fontSize.width2');
+        font-family: theme('fontFamily.aboutname');
     }
 
     .introduction {
@@ -141,9 +148,9 @@
     }
 
     #skill header {
-        @apply uppercase bg-clip-border text-center animate-textclip;
+        @apply uppercase font-bold bg-clip-border text-center animate-textclip;
         margin-top: theme('margin.width3');
-        font-size: theme('fontSize.width3');
+        font-size: theme('fontSize.width4');
         font-family: theme('fontFamily.aboutf');
         background-image: theme('backgroundImage.skillbgc');
         background-size: theme('backgroundSize.skillbgz');
@@ -259,7 +266,7 @@
     }
 
     #education header {
-        @apply animate-glow;
+        @apply animate-glow font-bold;
         font-family: theme('fontFamily.eef');
         color: theme('colors.eec');
         font-size: theme('fontSize.width3');
@@ -341,7 +348,7 @@
     }
 
     #experience header {
-        @apply order-2 animate-glow;
+        @apply order-2 animate-glow font-bold;
         font-family: theme('fontFamily.eef');
         color: theme('colors.eec');
         font-size: theme('fontSize.width3');
@@ -377,6 +384,56 @@
         width: theme('width.width9');
     }
 
+    #portofolio {
+        @apply flex justify-center items-center;
+        background-image: theme('backgroundImage.portofolio');
+    }
+
+    .frosted-glass {
+        @apply absolute backdrop-blur-md border-solid animate-jump;
+        max-width: theme('width.percen90');
+        background: theme('background.portofolioc');
+        border-radius: theme('borderRadius.width1');
+        border-width: theme('borderWidth.DEFAULT');
+        border: theme('borderColor.porto');
+        box-shadow: theme('boxShadow.portocard');
+    }
+    
+    .frame {
+        @apply flex flex-wrap justify-center items-center gap-5;
+    }
+
+    .porto-wrapper {
+        @apply relative overflow-hidden;
+        width: theme('width.percen40');
+        border-radius: theme('borderRadius.percen8');
+    }
+    
+    .porto-wrapper img {
+        @apply w-full block;
+        border-radius: theme('borderRadius.percen8');
+    }
+
+    .porto-content {
+        @apply absolute w-full h-0 left-0 top-0 flex flex-col justify-center items-center text-center overflow-hidden transition-all duration-500 ease-linear;
+        background: theme('background.portolayer');
+        border-radius: theme('borderRadius.percen8');
+    }
+
+    .porto-wrapper:hover .porto-content {
+        @apply h-full;
+    }
+
+    .subtitle {
+        @apply text-slate-900 font-aboutname font-bold;
+        font-size: theme('fontSize.width5');
+    }
+
+    .descporto {
+        @apply text-red-600 font-aboutname font-normal;
+        font-size: theme('fontSize.width4');
+    }
+
     #contact {
         @apply bg-no-repeat bg-cover bg-fixed flex flex-col justify-center items-center;
         background-image: theme('backgroundImage.contact');
@@ -391,7 +448,7 @@
     }
 
     .contact-header {
-        @apply uppercase bg-no-repeat duration-500;
+        @apply uppercase bg-no-repeat duration-500 font-bold;
         font-size: theme('fontSize.width7');
         color: theme('colors.contact');
         background-image: theme('backgroundImage.contactbgc');
@@ -410,7 +467,7 @@
         border-color: theme('borderColor.line');
         width: theme('width.width60');
         gap: theme('gap.width2');
-        margin-bottom: theme('margin.width4');
+        margin-bottom: theme('margin.width4') !important;
     }
     
     .form-detail {

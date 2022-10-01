@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        phone: { min: "320px", max: "1023px" },
+        phone: { min: "320px", max: "1024px" },
       },
       colors: {
         navfc: "#fa8072",
@@ -18,6 +18,9 @@ module.exports = {
         buttonc: "#ffffff",
       },
       background: {
+        portofolioc: "rgba(255, 255, 255, 0.3)",
+        portolayer:
+          "linear-gradient(to top, rgba(255, 255, 255, 0.6), rgb(41, 128, 185))",
         input: "rgba(71, 45, 45, 0.15)",
         button: "#18d26e",
         buttonbef: "rgba(255, 255, 255, 0.5)",
@@ -40,6 +43,7 @@ module.exports = {
       borderColor: {
         blogo: "rgb(246, 176, 238)",
         progc: "#52ad72",
+        porto: "rgba(255, 255, 255, 0.2)",
         line: "#00ffff",
         input: "#808080",
       },
@@ -53,7 +57,9 @@ module.exports = {
         width1point5: "1.5vw",
         width2: "2vw",
         width3: "3vw",
+        width4: "4vw",
         width5: "5vw",
+        width6: "6vw",
         width7: "7vw",
         height3: "3vh",
         height5: "5vh",
@@ -65,12 +71,14 @@ module.exports = {
         width8: "8vw",
         width9: "9vw",
         width10: "10vw",
+        width15: "15vw",
+        width20: "20vw",
         width30: "30vw",
         width40: "40vw",
         width50: "50vw",
         width60: "60vw",
-        height25: "25vh",
         percen5: "5%",
+        percen30: "30%",
         percen40: "40%",
         percen50: "50%",
         percen60: "60%",
@@ -93,9 +101,11 @@ module.exports = {
       },
       margin: {
         minwidth1: "-1vw",
+        minwidth20: "-20vw",
         widthzero1point5: "0 1.5vw",
         widthpoint5: "0.5vw",
         width1: "1vw",
+        width10: "10vw",
         width1zero: "1vw 0",
         width1point5: "1.5vw",
         width2: "2vw",
@@ -103,8 +113,6 @@ module.exports = {
         width4: "4vw",
         width4auto: "4vw auto",
         width4point5: "4.5vw",
-        width40: "40vw",
-        minheight10: "-10vh",
         height5: "5vh",
       },
       inset: {
@@ -135,6 +143,7 @@ module.exports = {
         homef: ["'Bungee Spice'", "cursive"],
         aboutf: ["'Luckiest Guy'", "cursive"],
         aboutfex: ["'Dangrek'", "cursive"],
+        aboutname: ["'Poppins'", "sans-serif"],
         eef: ["'Permanent Marker'", "cursive"],
         descpan: [
           "'Gill Sans'",
@@ -144,6 +153,7 @@ module.exports = {
           "sans-serif",
         ],
         descul: ["'Oswald'", "sans-serif"],
+        portof: ["'Silkscreen'", "cursive"],
         labelf: [
           "Impact",
           "Haettenschweiler",
@@ -159,6 +169,7 @@ module.exports = {
       boxShadow: {
         progbar:
           "3px 3px 5px -1px rgba(255, 255, 255, 0.5), -3px -3px 5px -1px rgba(255, 255, 255, 0.5);",
+        portocard: "0 8px 32px rgba(0, 0, 0, 0.3)",
       },
       transformOrigin: {
         "top-left-70": "70% 70%",
@@ -349,6 +360,17 @@ module.exports = {
             "text-shadow": "0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff",
           },
         },
+        jump: {
+          "0%": {
+            transform: "translateY(0)",
+          },
+          "50%": {
+            transform: "translateY(-0.5%)",
+          },
+          "100%": {
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         line: "line 0.5s ease-in-out infinite alternate",
@@ -362,12 +384,13 @@ module.exports = {
         progressBar50: "progressBar50 1.5s",
         progressBar40: "progressBar40 1.5s",
         glow: "glow 1s infinite",
+        jump: "jump 2s infinite",
       },
       gridTemplateRows: {
         auto3: "repeat(3, auto)",
-        main: "90vw 60vw 120vw 100vw 120vw",
-        smain: "50vw 50vw 90vw 90vw 90vw",
-        lmain: "50vw 40vw 80vw 90vw 90vw",
+        main: "100vw 80vw 80vw 100vw 350vw 120vw",
+        smain: "50vw 60vw 90vw 90vw 180vw 100vw",
+        lmain: "50vw 45vw 80vw 90vw 120vw 90vw",
       },
       gridTemplateColumns: {
         auto3: "repeat(3, auto)",
@@ -383,6 +406,7 @@ module.exports = {
         skillbgc:
           "linear-gradient(-225deg, #d8d5e2 0%, #a96ee7 29%, #e0439cde 67%, rgb(239, 239, 87) 81%, #f14242 100%);",
         ee: 'url("https://s0.smartresize.com/wallpaper/456/402/HD-wallpaper-beautiful-evening-landscape-minimal-8k-landscape-morning-artist-artwork-digital-art-minimalism-minimalist.jpg")',
+        portofolio: "linear-gradient(to right, #b92b27, #1565c0)",
         contact:
           'url("https://i.pinimg.com/originals/2a/bf/99/2abf995a71308926ca9ba270ad928c6d.jpg")',
         contactbgc:
