@@ -1661,7 +1661,7 @@ nav a:hover{
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(15 23 42 / var(--tw-text-opacity));
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
 .descporto{
@@ -1669,7 +1669,7 @@ nav a:hover{
   font-weight: 400;
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
-  font-size: 4vw;
+  font-size: 3vw;
 }
 
 #contact{
@@ -2030,6 +2030,10 @@ footer{
 
   .lg\:text-\[2vw\]{
     font-size: 2vw;
+  }
+
+  .lg\:text-\[1\.8vw\]{
+    font-size: 1.8vw;
   }
 
   .lg\:text-\[6vw\]{

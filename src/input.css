@@ -426,12 +426,12 @@
 
     .subtitle {
         @apply text-slate-900 font-aboutname font-bold;
-        font-size: theme('fontSize.width5');
+        font-size: theme('fontSize.width4');
     }
 
     .descporto {
         @apply text-red-600 font-aboutname font-normal;
-        font-size: theme('fontSize.width4');
+        font-size: theme('fontSize.width3');
     }
 
     #contact {
