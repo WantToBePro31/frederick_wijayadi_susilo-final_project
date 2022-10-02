@@ -407,6 +407,7 @@
         @apply relative overflow-hidden;
         width: theme('width.percen40');
         border-radius: theme('borderRadius.percen8');
+        box-shadow: theme('boxShadow.portos');
     }
     
     .porto-wrapper img {

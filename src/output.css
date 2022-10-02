@@ -1624,6 +1624,7 @@ nav a:hover{
   overflow: hidden;
   width: 40%;
   border-radius: 8%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .porto-wrapper img{
@@ -1980,10 +1981,6 @@ footer{
     margin-top: -5vw;
   }
 
-  .lg\:flex{
-    display: flex;
-  }
-
   .lg\:w-\[40vw\]{
     width: 40vw;
   }
@@ -2010,18 +2007,6 @@ footer{
 
   .lg\:grid-rows-lmain{
     grid-template-rows: 50vw 45vw 80vw 90vw 120vw 90vw;
-  }
-
-  .lg\:items-center{
-    align-items: center;
-  }
-
-  .lg\:justify-center{
-    justify-content: center;
-  }
-
-  .lg\:gap-\[5vw\]{
-    gap: 5vw;
   }
 
   .lg\:gap-10{
@@ -2054,10 +2039,6 @@ footer{
 
   .lg\:text-\[6vw\]{
     font-size: 6vw;
-  }
-
-  .lg\:text-\[1\.vw\]{
-    font-size: 1.vw;
   }
 }
 
